@@ -1,0 +1,350 @@
+/* Resets */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height:2000px;
+    background-color: #B1C8D1;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    width:100%;
+    height: 10%;
+    margin-top:4%;
+    margin-bottom: 11%;
+
+    font-size: 20px;
+}
+
+header i{
+    float: left;
+
+    width: 90%;
+    margin-top:2%;
+}
+
+header img{
+    float: right;
+
+    width: 10%;
+    height: auto;
+
+    border-radius: 5px;
+}
+
+header div{
+    padding-top: 15%;
+
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.nearby-card{
+    width: 450px;
+    height: 995px;
+    margin: 0 auto;
+    padding: 30px;
+
+    color: #2E5082;
+    background-color: #F8FAFA;
+
+    border-radius: 16px;
+}
+
+.nearby-info{
+    width:100%;
+    height: auto;
+    margin: 2% 0;
+    padding: 6% 5%;
+    display: inline-block;
+
+    background: #FFFFFF;
+
+    border-radius: 12px;
+    box-shadow: 0 10px 20px #F1F0F0, 0 -7px 20px #F1F0F0;
+}
+
+.nearby-info.no-top-shadow{
+    box-shadow: 0 10px 20px #F1F0F0;
+    padding:3% 5% 3% 5%;
+}
+
+.nearby-info.no-bottom-shadow{
+    margin:0;
+    margin-top:2%;
+    padding:6% 5% 3% 5%;
+    
+    box-shadow: 0 -7px 20px #F1F0F0;
+}
+.info-location{
+    height: 5%;
+    margin-bottom:15px;
+}
+
+.location{
+    float:left;
+
+    width: 30%;
+    height: 30%;
+
+    font-weight: bold;
+}
+
+.nearby-cloud{
+    position: relative;
+    float: left;
+
+    width: 30px;
+    height: 30px;
+    margin-top:20px;
+}
+
+.cloud-circle{
+    position: absolute;
+    float: left;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #FDC688;
+
+    border-radius: 50%;
+}
+
+.nearby-weather{
+    margin-left: 20%;
+    height: 60px;
+}
+
+.weather{
+    float: left;
+
+    width:200px;
+    margin-top:15px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.weather-description{
+    float: left;
+
+    margin-top:10px;
+
+    font-size:12px;
+    opacity: 0.5;
+}
+
+.temperature{
+    float: right;
+
+    margin-top: 5%;
+
+    font-size: 30px;
+
+    opacity: 0.4;
+}
+
+.profile-img{
+    float: left;
+
+    width: 12%;
+    height: 12%;
+
+    border-radius: 5px;
+}
+
+.nearby-artist{
+    margin-left: 70px;
+}
+
+.nearby-artist-name{
+    margin-bottom: 12px;
+
+    font-weight:bold;
+}
+
+.nearby-artist-description{
+    float: left;
+
+    font-size:12px;
+    font-weight:bold;
+
+    opacity:0.5;
+}
+
+.nearby-artist-color{
+    padding-left: 58px;
+
+    color: #F9C78E;
+    font-size: 12px;
+}
+
+.hot{
+    position: relative;
+    z-index: 5;
+}
+
+.hot-text{
+    position:absolute;
+
+    margin-top:8px;
+    margin-left: 10px;
+    padding: 5px 7px;
+
+    font-size: 10px;
+    color: #FFF2E6;
+    background-color:#FFC585; 
+
+    border-radius:5px;
+    z-index: 6;
+}
+
+.hot-img-div{
+    position:relative;
+    width: 330px;
+    height: 190px;
+    margin-top: 7%;
+    margin-bottom: 18px;
+    display: block;
+
+    background-image: url("img/Benagil_Cave,_Algarve.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    border-radius: 7px;
+    z-index:auto;
+}
+
+.hot-img-div:after{
+    content: "";
+
+    position: absolute;
+    left:12px;
+    top:20px;
+
+    width: 330px;
+    height: 150px;
+    display:block;
+
+    background-image: url("img/Benagil_Cave,_Algarve.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    border-radius: 7px;
+    z-index: -1;
+    opacity:0.3;
+}
+
+.hot-img-description{
+    margin-bottom: 40px;
+
+    font-size: 14px;
+
+    opacity: 0.6;
+}
+
+.post-info{
+    margin: 1px 0;
+}
+
+.post-likes{
+    float: left;
+}
+.icon-heart{
+    float: left;
+}
+
+.like-number{
+    float: left;
+
+    margin-left: 10px;
+
+    font-weight:bold;
+}
+
+.post-comments{
+    margin: 0 40%;
+}
+
+.icon-text{
+    float: left;
+}
+
+.comments-number{
+    float: left;
+
+    font-weight:bold;
+}
+
+.post-status{
+    float:right;
+
+    font-size: 13px;
+
+    opacity: 0.2;
+}
+
+.group-suggestion{
+    float:left;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    font-size:14px;
+
+    opacity: 0.5
+}
+
+.group-name{
+    float: left;
+
+    width: 280px;
+    margin-bottom:15px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.group-description{
+    line-height: 25px;
+    font-size:14px;
+
+    opacity: 0.5
+}
+
+.group-members{
+    margin-top:10px;
+}
+
+.group-members .profile-img {
+    margin: 5% 5% 5% 0;;
+}
+
+.group-size{
+    float:left;
+
+    width: 45px;
+    height: 45px;
+    margin: 17px 15px;
+    padding:15px 10px;;
+
+    font-size:14px;
+    background-color: #F2F4F6;
+
+    border-radius:5px;
+    opacity:0.8;
+}
+
+.members{
+    float:left;
+
+    margin: 30px 5px;
+
+    font-size:14px;
+
+    opacity: 0.3;
+}

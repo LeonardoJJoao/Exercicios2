@@ -1,0 +1,92 @@
+*{
+   box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    font-family: Helvetica;
+}
+#cardLeft{
+    align-content: center;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    width: 350px;
+    height: 750px;
+    border-radius: 20px;
+}
+#imgContainer{
+    margin:50px 0px;
+}
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+#startImg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 330px; /*isto não devia estar assim mas não estava a conseguir centrar a imagem */
+}
+.plusSign{
+    width: 40px;
+    height: 30px;
+    border-radius: 100%;
+    align-content: center;
+    position: relative;
+    left: 45px;
+}
+#first{
+    padding-top: 80px;
+    opacity: 0.5;
+}
+#Center{
+    margin-top: 30px;
+}
+.Img1{
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+}
+.content{
+    background-color: white;
+    height: 90px;
+    width:300px;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 20px auto;
+    text-align: left;
+    left: 70px;
+}
+.name{
+    font-size: 15px;
+    font-weight: bold;
+}
+.description{
+    font-size: 10px;
+    color: lightgray;
+    font-weight: bold;
+}
+.Img2{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 220px;
+    bottom: 52.5px;
+}
+#Bottom{
+    margin-top: 30px;
+    vertical-align: bottom;
+    opacity: 0.5;
+}
+#button{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    width:250px;
+    height:40px;
+    margin: 40px auto;
+    text-align: center;
+    color:white;
+    padding-top:10px;   
+}
