@@ -89,5 +89,17 @@ function getFinalResult(receipt, expense)
     console.log(finalResult);
 
     document.getElementById("resultBox").innerHTML = finalResult;
+
+    if(finalResult < -20){
+        document.getElementById("text").innerHTML = "You are broke - Go Work!!";
+        document.getElementById("text").style.color = "red"
+        console.log("text")
+    }else if(finalResult > 20){
+        document.getElementById("text").innerHTML = "You have still some money left!";
+        document.getElementById("text").style.color = "green"
+    }else{
+        document.getElementById("text").innerHTML = "";
+        document.getElementById("text").style.color = "#FFFFFF"
+    }
     return finalResult;
 }

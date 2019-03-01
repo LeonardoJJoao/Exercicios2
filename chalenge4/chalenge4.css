@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    outline: none;
+    border-style: none;
+    box-shadow: none;
 }
 
 body{
@@ -15,18 +18,39 @@ form{
 input, select{
     width: 24%;
     height: 30px;
+    border: 2px solid burlywood;
+}
+
+input:focus{
+    box-shadow: 0 0 5px chocolate;
 }
 
 table,tr,th,td{
     border: 2px solid black;
     text-align: center;
+    width: 400px;
+    max-width: 400px;
+    word-wrap: break-word;
 }
 
 table{
-    width: 400px;
-    padding: 30px;
 
+    padding: 30px;
     border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background: #CCCCCC
+}
+
+tr:nth-child(odd) {
+    background: #FFFFFF
+}
+
+th{
+    width: 110%;
+    padding: 10px 10px;
+    background-color: khaki; 
 }
 
 .moneytracking{
@@ -64,9 +88,14 @@ table{
     clear: both;
 }
 
+#text{
+    float: left;
+}
+
 #resultBox{
     width: 25%;
     height: 40px;
     margin: 0 auto;
+    padding: 6px 0;
     border: 2px solid gold;
 }
