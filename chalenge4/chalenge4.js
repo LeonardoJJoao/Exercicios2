@@ -45,6 +45,7 @@ function onSubmit()
 
             expensesSum = result.reduce(add);
             console.log(expensesSum);
+            document.getElementById("totalexpenses").innerHTML = expensesSum;
         }
         else if (movementType == "receipts")
         {
@@ -65,6 +66,7 @@ function onSubmit()
 
             receiptSum = result.reduce(add);
             console.log(receiptSum);
+            document.getElementById("totalreceipts").innerHTML = receiptSum;
         }
         else
         {

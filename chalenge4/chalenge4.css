@@ -48,7 +48,6 @@ tr:nth-child(odd) {
 }
 
 th{
-    width: 110%;
     padding: 10px 10px;
     background-color: khaki; 
 }
@@ -67,6 +66,29 @@ th{
     margin: 30px 0;
     display: flex;
     justify-content: space-between;
+}
+
+.container-totals{
+    height: 30px;
+    width: 100%;
+}
+
+.totalexpenses{
+    float: left;
+}
+
+.totalreceipts{
+    float: right;
+} 
+
+.totalexpense{
+    width: 60px;
+    text-align: left;
+}
+
+.totalreceipt{
+    width: 60px;
+    float: right;
 }
 
 .expensesTable{
