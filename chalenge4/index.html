@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chalenge4</title>
+    <link rel="stylesheet" href="chalenge4.css">
+</head>
+
+<body>
+    <div class="moneytracking">
+        <div class="moneymovements">
+            <form id="trackingform">
+                <input type="text" placeholder="Description" id="description">
+                <input type="number" name="value" placeholder="Value" id="value">
+                <select name="options" id="options">
+                    <option value="default" selected>---</option>
+                    <option value="expenses" class="movementType">Despesas</option>
+                    <option value="receipts" class="movementType">Receitas</option>
+                </select>
+                <input type="button" value="submit" onclick="onSubmit()">
+            </form>
+        </div>
+        <div class="tables">
+            <table id="expensesTable" class="expensesTable">
+                <tr>
+                    <th class="description">Descrição da despesa</th>
+                    <th class="value">Valor da despesa</th>
+                </tr>
+            </table>
+            <table id="receitsTable" class="receitsTable">
+                <tr>
+                    <th class="description">Descrição da receita</th>
+                    <th class="value">Valor da receita</th>
+                </tr>
+            </table>
+        </div>
+        <div class="result">
+            <div class="totalMoney">Money Balance:</div>
+            <div id="resultBox"></div>
+        </div>
+    </div>
+    <footer>
+        <script src="chalenge4.js"></script>
+    </footer>
+</body>
+
+</html>

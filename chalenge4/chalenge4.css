@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(90, 90, 90);
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+form{
+    width: 100%;
+}
+
+input, select{
+    width: 24%;
+    height: 30px;
+}
+
+table,tr,th,td{
+    border: 2px solid black;
+    text-align: center;
+}
+
+table{
+    width: 400px;
+    padding: 30px;
+
+    border-collapse: collapse;
+}
+
+.moneytracking{
+    width: 1050px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    background-color:#FFFFFF;
+
+    border-radius: 15px;
+}
+
+.moneymovements{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expensesTable{
+    float: left;
+}
+
+.receitsTable{
+    float: right;
+}
+
+.result{
+    width: 100%;
+    height: 60px;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+
+    clear: both;
+}
+
+#resultBox{
+    width: 25%;
+    height: 40px;
+    margin: 0 auto;
+    border: 2px solid gold;
+}
