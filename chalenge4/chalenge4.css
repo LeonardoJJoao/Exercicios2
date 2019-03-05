@@ -34,7 +34,6 @@ table,tr,th,td{
 }
 
 table{
-
     padding: 30px;
     border-collapse: collapse;
 }
@@ -69,12 +68,14 @@ th{
 }
 
 .container-totals{
-    height: 30px;
-    width: 100%;
+    height: 35px;
 }
 
 .totalexpenses{
     float: left;
+
+    width: 150px;
+    height: 100%;
 }
 
 .totalreceipts{
@@ -83,7 +84,7 @@ th{
 
 .totalexpense{
     width: 60px;
-    text-align: left;
+    float: left;
 }
 
 .totalreceipt{

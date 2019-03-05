@@ -1,0 +1,183 @@
+/* Icon Content: Arrow-Left */
+.fa-angle-left{
+    float: left;
+    opacity: 0.2;
+}
+
+
+/*Icon Content: Location */
+.fa-map-marker-alt{
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    
+    opacity: 0.2;
+}
+
+/* Icon Content: Circel */
+.fa-circle{
+    font-size: 36px;
+    color: #FDC587;
+}
+
+/* Icon Content: Cloud */
+.fa-cloud{
+    padding-left: 25px;
+    
+    color: #FEFEFE;
+    
+    z-index: 2;
+}
+
+/* Icon Content: Heart */
+.icon-heart{
+    position: relative;
+    
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+}
+
+.heart {
+    position:absolute;
+    
+    height: 60%;
+    width: 60%;
+    
+    background-color: #4D5E8E;
+    
+    
+    transform: rotate(-45deg);
+}
+
+.heart:before {
+    content: "";
+    
+    position: absolute;
+    top: -45%;
+    left: 0;
+    
+    height: 100%;
+    width: 100%;
+    
+    background-color: #4D5E8E;
+    
+    border-radius: 50%;
+}
+
+.heart:after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 45%;
+    
+    height: 100%;
+    width: 100%;
+    
+    background-color: #4D5E8E;
+    
+    border-radius: 50%;
+}
+
+.heart-front {
+    position:absolute;
+    transform:translate(25%, 20%) rotate(-45deg);
+    
+    height: 40%;
+    width: 40%;
+    
+    background-color: #FFFFFF;
+    
+    z-index:10;
+}
+
+.heart-front:before {
+    content: "";
+    
+    position: absolute;
+    top: -50%;
+    left: 0;
+    
+    height: 100%;
+    width: 100%;
+    
+    background-color: #FFFFFF;
+    
+    border-radius: 50%;
+}
+
+.heart-front:after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    height: 100%;
+    width: 100%;
+    
+    background-color: #FFFFFF;
+    
+    border-radius: 50%;
+}
+
+
+/* Icon Content: Text */
+.icon-text{
+    position: relative;
+    
+    height: 30px;
+    width: 30px
+}
+
+.text-box{
+    position:absolute;
+    
+    height: 60%;
+    width: 60%;
+    
+    background-color: #4D5E8E;
+    
+    border-radius: 12px 12px 10px 5px;
+}
+
+.text-box-front{
+    position:absolute;
+    top: 5%;
+    left: 4.9%;
+    
+    height: 50%;
+    width: 50%;
+    
+    background-color: #FFFFFF;
+    
+    border-radius: 10px 10px 8px 2px;
+}
+
+.text-lines{
+    position:absolute;
+    
+    height: 8%;
+    width: 25%;
+    margin: 20% 17%;
+    
+    background-color: #4D5E8E;
+    
+    border-radius: 15px;
+}
+
+.text-lines:after{
+    content:"";
+    
+    position: absolute;
+    top:200%;
+    left: 0%;
+    
+    height: 100%;
+    width: 100%;
+    
+    background-color: #4D5E8E;
+    
+    border-radius: 15px;
+}
