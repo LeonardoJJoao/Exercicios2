@@ -33,6 +33,14 @@ body{
     opacity: 0.1;
 }
 
+.button{
+    margin:10px 0; 
+}
+
+.options{
+    padding-left: 0;
+}
+
 .transactions,.transactionslist{
     margin-left: 0;
     margin-right: 0;
