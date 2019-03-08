@@ -1,5 +1,6 @@
 body{
     margin:20px;
+
     background-color: #4DB0F8;
 }
 
@@ -14,8 +15,8 @@ body{
 }
 
 .coolname{
-    padding: 10px 0;
     height: 100%;
+    padding: 10px 0;
 }
 
 .mywallet{
@@ -42,8 +43,8 @@ body{
 }
 
 .transactions,.transactionslist{
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
 }
 
 .listtitle{
@@ -52,11 +53,13 @@ body{
 
 .transactionslist{
     padding: 10px 0 15px;
+
     border-top: 1px solid rgba(117, 116, 116, 0.05);
 }
 
 .balance{
     margin-right: 12px;
+
     color:#5AABFF;
 }
 
@@ -74,16 +77,19 @@ body{
 
 .plusicon{
     margin-top: 8px;
+
     color:#83D13F;
 }
 
 .minusicon{
     margin-top: 8px;
+
     color:#FC7373;
 }
 
 .fa-circle{
     margin-top: 3px;
+
     font-size: 18px;
 }
 
@@ -97,11 +103,14 @@ body{
 
 .transfername{
     font-weight: bold;
+
+    word-wrap:break-word;
     opacity: 0.4;
 }
 
-.transfervalue{
+.moneyvalue{
     padding-left: 0; 
+
     font-weight: bold;
 }
 
@@ -116,5 +125,6 @@ body{
 .transferdescription{
     line-height: 8px;
     font-size: 13px;
+    
     opacity: 0.3;
 }

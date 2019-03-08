@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>chalenge5</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="chalenge6.css">
 </head>
@@ -21,25 +20,23 @@
                     <i class="col-3 fas fa-ellipsis-h fa-2x"></i>
                 </div>
                 <form id="trackingform">
-                    <div class="row button">
-                        <input type="text" class="col-10" placeholder="Description" id="description">
+                    <div class="row form-group button">
+                        <label for="description">Describe the Transfer:</label>
+                        <input type="text" class="col-12 form-control" placeholder="Description" id="description">
                     </div>
-                    <div class="row button">
-                        <input type="number" class="col-10" name="value" placeholder="Value" id="value">
+                    <div class="row form-group button">
+                        <label for="monevTransfer">Put in the value of the Transfer:</label>
+                        <input type="number" class="col-12 form-control" name="moneyTransfer" placeholder="Value"id="moneyTransfer">
                     </div>
-                    <div class="row button">
-                            <input type="date" class="col-10" name="value" placeholder="Value" id="value">
-                    </div>
-                    <div class="row button">
-                            <input type="time" class="col-10" name="value" placeholder="Value" id="value">
-                    </div>
-                    <div class="row button">
-                        <select name="options" class="col-5 options" id="transfervalue">
+                    <div class="row form-group justify-content-between button">
+                        <label for="transfervalue">Transfer Value</label>
+                        <select name="options" class="col-5 form-control options" id="transfervalue">
                             <option value="default" selected>---</option>
-                            <option value="expenses" class="-">Despesas</option>
-                            <option value="receipts" class="+">Receitas</option>
+                            <option value="expenses" class="expenses">Expense</option>
+                            <option value="receipts" class="receipts">Receipt</option>
                         </select>
-                        <select name="options" class="col-5 options" id="transfertype">
+                        <label for="transfertype">Transfer Use:</label>
+                        <select name="options" class="col-5 form-control options" id="transfertype">
                             <option value="default" selected>---</option>
                             <option value="transfer">Transfer</option>
                             <option value="books">Books</option>
@@ -47,84 +44,29 @@
                             <option value="wages">Wages</option>
                         </select>
                     </div>
-                    <input type="button" class="row button" value="Submit" onclick="onSubmit()">
+                    <div class="row form-group justify-content-center button">
+                        <input type="button" class="col-5" value="Submit" onclick="onSubmit()">
+                    </div>
                 </form>
             </div>
-            <!-- <div class="tables">
-                        <div class="container-totals">
-                            <div class="totalreceipt" id="totalreceipts"></div>
-                            <div class="totalreceipts">Total de receitas: </div>
-                            <div class="totalexpenses">Total de despesas: </div>
-                            <div class="totalexpense" id="totalexpenses"></div>
-                        </div>
-                        <table id="expensesTable" class="expensesTable">
-                            <tr>
-                                <th class="description">Descrição da despesa</th>
-                                <th class="value">Valor da despesa</th>
-                            </tr>
-                        </table>
-                        <table id="receitsTable" class="receitsTable">
-                            <tr>
-                                <th class="description">Descrição da receita</th>
-                                <th class="value">Valor da receita</th>
-                            </tr>
-                        </table>
-                    </div> -->
-            <!-- <div class="result">
-                        <div class="totalMoney">Money Balance:</div>
-                        <div id="text"></div>
-                        <div id="resultBox"></div>
-                    </div> -->
             <div class="col-7">
                 <div class="row justify-content-between transactions">
                     <div class="text">Balance</div>
                     <div class="row balance">
                         <div class="€">€</div>
-                        <div class="totalbalance">0.00</div>
+                        <div class="totalbalance" id="totalbalance">0.00</div>
                     </div>
                 </div>
                 <div class="row transactions listtitle">Transations</div>
-                <div class="row justify-content-between transactionslist ">
-                    <div class="col-1 icon">
-                        <span class="fa-stack fa-xs plusicon">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-plus-circle fa-stack-1x fa-inverse fa-lg"></i>
-                        </span>
-                    </div>
-                    <div class="col-11">
-                        <div class="row justify-content-between transfer">
-                            <div class="col-9 transfername">Money Transfer Joana</div>
-                            <div class="col-3 text-right transfervalue positive">€120.00</div>
-                        </div>
-                        <div class="row justify-content-between transferdescription">
-                            <div class="col-4 date">12/10/2015</div>
-                            <div class="col-4 time">14:40</div>
-                            <div class="col-4 text-right transfertype">Transfer</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-between transactionslist ">
-                    <div class="col-1 icon">
-                        <span class="fa-stack fa-xs minusicon">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-plus-circle fa-stack-1x fa-inverse fa-lg"></i>
-                        </span>
-                    </div>
-                    <div class="col-11">
-                        <div class="row justify-content-between transfer">
-                            <div class="col-9 transfername">Design eBook</div>
-                            <div class="col-3 text-right transfervalue negative">€3.99</div>
-                        </div>
-                        <div class="row justify-content-between transferdescription">
-                            <div class="col-4 date">08/10/2015</div>
-                            <div class="col-4 time">10:05</div>
-                            <div class="col-4 text-right transfertype">Books</div>
-                        </div>
-                    </div>
+                <div class="movementlist" id="movementlist">
                 </div>
             </div>
         </div>
         <footer>
+                <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous"></script>
             <script src="chalenge6.js"></script>
             <script src="js\bootstrap.js"></script>
         </footer>
