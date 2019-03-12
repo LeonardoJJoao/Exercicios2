@@ -17,14 +17,20 @@ body{
 .nearby-card{
     width: 450px;
     height:970px;
-
+    
     margin: 40px auto;
     padding: 50px;
-
+    
     color: #2E5082;
     background-color: #F8FAFA;
-
+    
     border-radius: 16px;
+}
+
+.profile-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
 }
 
 .cardtitle{
@@ -55,12 +61,6 @@ body{
     padding: 0 5% 5px;
 
     box-shadow: 0 -7px 20px #F1F0F0;
-}
-
-.profile-img{
-    width: 45px;
-    height: 45px;
-    border-radius: 5px;
 }
 
 .location{
@@ -185,14 +185,6 @@ body{
     opacity: 0.4;
 }
 
-.icon-heart{
-    margin-top: 6px;
-}
-
-.icon-text{
-    margin-top: 3px;
-}
-
 .like-number{
     font-weight:bold;
 }
@@ -203,12 +195,20 @@ body{
 
 .post-info{
     display: block;
+    
+}
 
+.icon-heart{
+    margin-top: 6px;
 }
 
 .post-likes{
     float: left;
     margin-right: 35px;
+}
+
+.icon-text{
+    margin-top: 3px;
 }
 
 .post-comments{
