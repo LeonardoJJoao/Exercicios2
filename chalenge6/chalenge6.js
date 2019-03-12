@@ -8,6 +8,7 @@ var receiptsDescription = [];
 var receiptsValue = [];
 
 var movementList = document.getElementById("movementlist");
+var deleteList = document.getElementById("deleteList");
 
 var expensesSum = 0;
 var receiptSum = 0;
@@ -112,7 +113,7 @@ function onSubmit()
         '<div class="col-11">' +
         '<div class="row justify-content-between transfer">' +
         '<div class="col-9 transfername">' + transferName + '</div>' +
-        '<div class="col-3 text-right moneyvalue ' + textColor + ' ">€' + moneyValue + '</div>' +
+        '<div class="col-3 text-right moneyvalue ' + textColor + '">€' + moneyValue + '</div>' +
         '</div>' +
         '<div class="row justify-content-between transferdescription">' +
         '<div class="col-4 date">' + date + '</div>' +
@@ -122,14 +123,61 @@ function onSubmit()
         '</div>' +
         '</div>';
         
+        //create new list element
         var divListElement = document.createElement('div');
-        
+
+        divListElement.setAttribute("class",transferName);
+        divListElement.setAttribute("value", moneyValue);
+
         divListElement.innerHTML = movementListElement;
 
         movementList.appendChild(divListElement);
+
+        //add description(transferName) to deleteList
+        var optDeleteList = document.createElement('option');
+        optDeleteList.setAttribute("class",transferName);
+
+        optDeleteList.value = transferName;
+        optDeleteList.innerHTML = transferName;
+
+        deleteList.appendChild(optDeleteList);
+
     } else{
         console.log('put in values');
     }
+}
+
+function addTransferTypeOption(){
+    var newTransferType = document.getElementById("new-transfertype").value;
+
+    var optTransferType = document.createElement('option');
+
+    optTransferType.value = newTransferType;
+    optTransferType.innerHTML = newTransferType;
+
+    transfertype.appendChild(optTransferType);
+    document.getElementById("newstuffform").reset();
+}
+
+function deleteListMember(){
+    var deleteListItem = document.getElementById("deleteList").value;
+    // var deleteListItemValue = document.getElementById(transferName).value;
+
+    console.log(deleteListItem);
+    var selectedItems = document.getElementsByClassName(deleteListItem);
+    while(selectedItems.length > 0){
+        selectedItems[0].parentNode.removeChild(selectedItems[0]);
+    }
+    console.log(receiptsValue);
+
+    // var index = receiptsValue.indexOf(deleteListItemValue);
+    //     if (index > -1) {
+    //         receiptsValue.splice(index, 1);
+    // }
+
+    console.log(expensesValue);
+    
+    getFinalResult(receiptSum, expensesSum);
 }
 
 /** adds the values in the arrays using reduce(add)*/

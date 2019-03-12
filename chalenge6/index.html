@@ -48,6 +48,22 @@
                         <input type="button" class="col-5" value="Submit" onclick="onSubmit()">
                     </div>
                 </form>
+                <form id="newstuffform">
+                    <div class="row form-group button">
+                        <label for="description">Add new Transfer use:</label>
+                        <input type="text" class="col-12 form-control" placeholder="New Transfer Type" id="new-transfertype">
+                    </div>
+                    <div class="row form-group justify-content-center button">
+                        <input type="button" class="col-5" value="Submit" onclick="addTransferTypeOption()">
+                    </div>
+                    <label for="description">Delete List item:</label>
+                    <select name="options" class="col-12 form-control options" id="deleteList">
+                        <option value="default" selected hidden>---</option>
+                    </select>
+                    <div class="row form-group justify-content-center button">
+                        <input type="button" class="col-5" value="Submit" onclick="deleteListMember()">
+                    </div>
+                </form>
             </div>
             <div class="col-7">
                 <div class="row justify-content-between transactions">

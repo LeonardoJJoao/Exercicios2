@@ -4,17 +4,21 @@
     margin: 0;
 }
 
+body{
+    background-color: #B1C8D1;
+}
+
 .container-fluid{
     width: 100%;
-
-    background-color: #B1C8D1;
+    height: 1050px;
+    font-family: Helvetica, sans-serif;
 }
 
 .nearby-card{
     width: 450px;
     height:970px;
 
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 50px;
 
     color: #2E5082;
@@ -25,12 +29,16 @@
 
 .cardtitle{
     margin-top: 5px; 
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-left: -15px;
+
+    font-size: 34px;
+    font-weight: bold;
 }
 
 .nearby-info{
-    margin: 4% 0;
-    padding: 6% 10%;
+    margin: 15px -15px;
+    padding: 8% 10% 4%;
 
     background: #FFFFFF;
 
@@ -40,13 +48,11 @@
 
 .nearby-info.no-top-shadow{
     box-shadow: 0 10px 20px #F1F0F0;
-    padding:3% 5% 3% 5%;
+    padding:3%;
 }
 
 .nearby-info.no-bottom-shadow{
-    margin:0;
-    margin-top:2%;
-    padding:0;
+    padding: 0 5% 5px;
 
     box-shadow: 0 -7px 20px #F1F0F0;
 }
@@ -81,7 +87,7 @@
 .weatherdescription{
     margin-top:5px;
 
-    font-size:12px;
+    font-size:13px;
     opacity: 0.5;
 }
 
@@ -93,20 +99,25 @@
 }
 
 .artist-text{
-    margin-left: 15px; 
+    font-size: 18px;
+    font-weight:bold;
 }
 
 .artist-description{
-    font-size:12px;
+    font-size:14px;
     font-weight:bold;
 
     opacity:0.5;
 }
 
+.artist-type{
+    padding-right: 0;
+}
+
 .artist-color{
-    font-weight: bold;
+    padding: 0;
+
     color: #F9C78E;
-    font-size: 12px;
 }
 
 .imagewrapper{
@@ -134,8 +145,8 @@
 }
 
 .artistimage{
-    width: 290px;
-    height: 190px;
+    width: 320px;
+    height: 175px;
 
     background-image: url("img/Benagil_Cave,_Algarve.jpg");
     background-size: 100%;
@@ -149,11 +160,11 @@
     content: "";
 
     width: 230px;
-    height: 150px;
+    height: 155px;
 
     position: absolute;
-    right:-10px;
-    top:20px;
+    right: 7px;
+    top:10px;
 
     display:block;
 
@@ -171,7 +182,7 @@
 
     font-size: 14px;
 
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .icon-heart{
@@ -190,14 +201,38 @@
     font-weight:bold;
 }
 
-.post-status{
-    font-size: 13px;
+.post-info{
+    display: block;
 
+}
+
+.post-likes{
+    float: left;
+    margin-right: 35px;
+}
+
+.post-comments{
+    float: left;
+}
+
+.post-status{
+    float: right;
+    
+    font-size: 13px;
+    
     opacity: 0.2;
 }
 
+.clearer{
+    clear: both;
+}
+
+.groupwrapper{
+    padding-top: 10px;
+}
+
 .group{
-    padding: 10px 30px 0 30px;
+    padding: 10px 30px 0;
 }
 
 .groupsuggestion{
@@ -211,23 +246,25 @@
 
 .groupname{
     padding: 0;
-    margin-left: 10px;
+
     font-size: 20px;
+    font-weight: bold;
 }
 
 .groupdescription{
+    margin-top: -8px;
     padding: 0 30px;
 }
 
 .groupdescriptiontext{
     line-height: 25px;
-    font-size:13px;
+    font-size:14px;
 
     opacity: 0.5
 }
 
 .members{
-    margin: 20px 0;
+    margin: 12px 0;
     font-size:14px;
 }
 
