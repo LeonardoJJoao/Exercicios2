@@ -99,12 +99,14 @@ body{
 }
 
 .artist-text{
+    margin-bottom: 3px;
+
     font-size: 18px;
     font-weight:bold;
 }
 
 .artist-description{
-    font-size:14px;
+    font-size:13px;
     font-weight:bold;
 
     opacity:0.5;
