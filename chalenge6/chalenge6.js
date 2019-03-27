@@ -145,7 +145,7 @@ function onSubmit()
     }
 }
 
-/** adds new TransferType getting input */
+/** adds new TransferType getting user input */
 function addTransferTypeOption()
 {
     var newTransferType = document.getElementById("new-transfertype").value;
@@ -201,7 +201,7 @@ function getTotalBalance(transactionNumber)
         console.log(i + "-----" + transaction);
         console.log(i + "-----" + transactionData);
 
-        /** Cheks if total is not undefined, so it is 0 instead*/
+        /** Checks if total is not undefined, so it is 0 instead*/
         if (transactionData[transaction] != undefined)
         {
             thisNumber = parseFloat(transactionData[transaction].value);
